@@ -13,7 +13,7 @@ class Sample extends React.Component {
   render() {
     return (
       <div className={Styles.sample}>
-        I will be the Sample Component
+        Sample App !!!
         <p className={Styles.para}> Hello </p>
       </div>
     );

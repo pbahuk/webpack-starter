@@ -6,4 +6,5 @@
 .para {
   font-size: ~fontSize.large_xl;
   font-weight: ~fontWeight.bold;
+  color: yellow;
 }

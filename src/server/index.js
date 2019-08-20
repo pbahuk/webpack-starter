@@ -5,9 +5,11 @@ const app = express();
 const DIST_DIR = path.join(__dirname, "../../dist");
 const PORT = process.env.NODE_PORT || 8000;
 
-app.use(express.static(DIST_DIR));
-
-console.log("hello 2");
+if (process.env.NODE_ENV === "development") {
+  require("./devSetup")(app);
+} else {
+  app.use(express.static(DIST_DIR));
+}
 
 app.get("*", (req, res) => {
   console.log("Catching the default route sjgsjhgsjsgjshsjshsjsh", req);

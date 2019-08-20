@@ -8,7 +8,8 @@
     "remove-dist": "rm -rf dist",
     "build-dev": "npm run remove-dist && NODE_ENV=development webpack",
     "build-prod": "npm run remove-dist && NODE_ENV=production webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "start-server": "nodemon server.js --watch src/server"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
+    "nodemon": "^1.19.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-constants": "^0.2.0",
     "postcss-loader": "^3.0.0",

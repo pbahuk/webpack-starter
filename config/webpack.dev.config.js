@@ -1,3 +1,5 @@
 const merge = require("webpack-merge");
 
-module.exports = {};
+module.exports = {
+  mode: "development"
+};

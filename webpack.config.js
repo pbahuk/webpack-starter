@@ -7,7 +7,7 @@ if (env === "production") {
   console.log("webpack: production config selected");
   config = merge(baseConfig, require("./config/webpack.prod.config"));
 } else if (env === "development") {
-  console.log("webpack: production config selected");
+  console.log("webpack: development config selected");
   config = merge(baseConfig, require("./config/webpack.dev.config"));
 }
 

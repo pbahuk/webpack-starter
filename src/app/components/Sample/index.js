@@ -1,4 +1,6 @@
 import React from "react";
+import Styles from "./sample.css";
+console.log("Styles:", Styles);
 
 class Sample extends React.Component {
   constructor(props) {
@@ -9,7 +11,12 @@ class Sample extends React.Component {
   }
 
   render() {
-    return <div>I will be the Sample Component</div>;
+    return (
+      <div className={Styles.sample}>
+        I will be the Sample Component
+        <p className={Styles.para}> Hello </p>
+      </div>
+    );
   }
 }
 

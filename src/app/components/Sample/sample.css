@@ -1,0 +1,9 @@
+.sample {
+  border: 1px dotted ~colors.mynt;
+  color: ~colors.red;
+}
+
+.para {
+  font-size: ~fontSize.large_xl;
+  font-weight: ~fontWeight.bold;
+}
